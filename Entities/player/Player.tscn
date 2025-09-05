@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://cmqyvewqla2cn"]
+
+[ext_resource type="Script" uid="uid://dgq33trjksuu1" path="res://Entities/player/player.gd" id="1_kpjcp"]
+[ext_resource type="Texture2D" uid="uid://bdaou1g5f43jb" path="res://spacepixels-0.1.0/spacepixels-0.1.0/pixel_ship.png" id="1_xhfnw"]
+
+[node name="Player" type="Node2D"]
+script = ExtResource("1_kpjcp")
+
+[node name="PixelShip" type="Sprite2D" parent="."]
+scale = Vector2(0.661738, 0.569444)
+texture = ExtResource("1_xhfnw")

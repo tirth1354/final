@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://ynbq84gb7qkn"]
+
+[ext_resource type="Script" uid="uid://ducml2w6cnpib" path="res://Entities/Enemies/enemy.gd" id="1_bxkaj"]
+[ext_resource type="Texture2D" uid="uid://cid6voebt01s" path="res://spacepixels-0.1.0/spacepixels-0.1.0/asteroid_grey.png" id="2_47qgu"]
+
+[node name="Area2D" type="Area2D"]
+script = ExtResource("1_bxkaj")
+
+[node name="AsteroidGrey" type="Sprite2D" parent="."]
+scale = Vector2(1.05556, 0.966667)
+texture = ExtResource("2_47qgu")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-17, -34, -17, -15, -38, -15, -38, 25, -16, 25, -16, 35, 6, 35, 6, 25, 16, 25, 16, 15, 38, 15, 38, -6, 27, -6, 27, -15, 6, -15, 6, -34)
